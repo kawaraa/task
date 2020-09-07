@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Mulish");
+
+.profile-tab {
+  position: relative;
+  flex: auto;
+  background: white;
+  margin: 30px;
+  padding: 30px 0 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0px rgb(180, 182, 189);
+}
+.profile-tab * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  color: rgb(21, 30 29);
+}
+
+.user-data-heading {
+  margin: 0 0 30px 0;
+  font-size: 17px;
+  font-weight: normal;
+  color: black;
+}
+.heading {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+#saved-label {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: green;
+}
+
+.fields-wrapper {
+  display: flex;
+}
+.input-field {
+  flex: auto;
+  margin: 0 30px 30px 0;
+}
+label[for="email"],
+label[for="last-name"],
+label[for="first-name"],
+label[for="language"],
+label[for="current-psw"],
+label[for="new-psw"] {
+  display: block;
+  margin: 0;
+  margin: 0 0 10px 0;
+  font-size: 15px;
+}
+label[for="email"]::after,
+label[for="last-name"]::after,
+label[for="first-name"]::after,
+label[for="current-psw"]::after,
+label[for="new-psw"]::after {
+  content: "*";
+  display: inline-block;
+  margin: 0;
+  color: red;
+}
+
+#last-name,
+#first-name,
+#email,
+#language,
+#current-psw,
+#new-psw {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(215, 219, 228);
+  color: rgb(57, 63, 69);
+}
+#last-name:focus,
+#first-name:focus,
+#email:focus,
+#language:focus,
+#current-psw:focus,
+#new-psw:focus {
+  outline: none;
+  border-color: rgb(9, 73, 110);
+}
+#last-name.error,
+#first-name.error,
+#email.error,
+#language.error,
+#current-psw.error,
+#new-psw.error,
+#last-name.error:focus,
+#first-name.error:focus,
+#email.error:focus,
+#language.error:focus,
+#current-psw.error:focus,
+#new-psw.error:focus {
+  border-color: #d0021b;
+}
+.error-text {
+  display: inline-block;
+  color: #d0021b;
+}
+.profile-btn {
+  padding: 12px;
+  font-size: 16px;
+  background: rgb(26, 76, 118);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.profile-btn.save {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.edit-password-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0 0 100px 0;
+}
